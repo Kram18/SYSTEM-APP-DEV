@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from '../components/Login.vue'
 import Dashboard from '../components/Dashboard.vue'
+import 'vuetify/dist/vuetify.min.css';
+
 
 const routes = [
   {
