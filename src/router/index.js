@@ -13,6 +13,19 @@ const routes = [
     path: '/dashboard',
     component: Dashboard
   },
+
+    // ... other routes
+    {
+      path: '/shop',
+      name: 'Shop',
+      component: Shop,
+    },
+    {
+      path: '/blog',
+      name: 'Blog',
+      component: Blog,
+    },
+
   {
     path: '/about',
     name: 'about',
@@ -23,9 +36,10 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes,
+});
 
-export default router
+export default router;

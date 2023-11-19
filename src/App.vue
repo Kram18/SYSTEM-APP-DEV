@@ -1,7 +1,13 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+<!-- App.vue or Navbar.vue -->
+<router-link to="/">Home</router-link>
+<router-link to="/service">Services</router-link>
+<router-link to="/about">About</router-link>
+<router-link to="/blog">Blog</router-link>
+<router-link to="/shop">Shop</router-link> <!-- Add this line -->
+<router-link to="/contacts">Contacts</router-link>
+
   </nav>
   <router-view/>
 </template>
